@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans&family=Red+Rose:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;1,700&family=Red+Rose:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,800;0,900;1,700&family=Red+Rose:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,800;0,900;1,700&family=Red+Rose:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navigation-box {
+    width: 100%;
+    border: 0px solid black;
+    height: 90px;
+    position: fixed;
+    overflow: scroll;
+    margin-top: -125px;
+    display: flex;
+    background-color: white;
+}
+.navigation-box h1 {
+    font-family: 'Red Rose', cursive;
+    font-size: 25.5px;
+    font-weight: 700;
+    flex-basis: 32%;
+    margin-top: 26px;
+    margin-left: 35px;
+    border: 0 black solid;
+    color: #073831;
+}
+.navigation-box .buttons {
+    flex-basis: 34%;
+    border: 0 solid black;
+}
+.navigation-box .buttons p {
+    display: flex;
+}
+.navigation-box .buttons p a {
+    text-decoration: none;
+    color: #073831;
+    border: 0 solid black;
+    /* width: 100%; */
+    text-align: left;
+    margin-left: 1px;
+    cursor: auto;
+    margin-top: 26px;
+}
+.navigation-box .buttons p a span {
+    font-family: 'Red Rose', sans-serif;
+    cursor: pointer;
+    font-size: 15px;
+} 
+.navigation-box .buttons p a:nth-child(1) {
+    width: 18%;
+}
+.navigation-box .buttons p a:nth-child(2) {
+    width: 21%;
+}
+.navigation-box .buttons p a:nth-child(3) {
+    width: 30%;
+}
+.navigation-box .wrapper-button {
+    flex-basis: 33%;
+}
+.navigation-box .wrapper-button button {
+    background-color: #073831;
+    color: white;
+    width: 52%;
+    margin-right: 88px;
+    margin-top: 15px;
+    height: 58px;
+    font-size: 16px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    animation: reverse-background-color-hover-button-cv-dw .2s ease;
+    animation-fill-mode: forwards;
+}
+.navigation-box .wrapper-button button:hover {       
+    animation: background-color-hover-button-cv-dw .2s ease;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+.wrapper-button {
+    text-align: right;
+}
+/* End of Navigation Bar */
+
+/* Intro Section */
+    /* Left/Pink side */
+.bod {
+    margin-top: 125px;
+    display: flex;
+}
+.bod .text {
+    border: 0px solid red;;
+    flex-basis: 50%;
+    height: 675px;
+    background-color: #FEF4F5;
+}
+.bod .text .title-and-subtitle h1  {
+    font-family: 'Red Rose', cursive;
+    font-size: 60px;
+    color: #073831;
+    margin-top: 150px;
+    margin-left: 49px;
+    font-weight: 900;
+}
+.bod .text .title-and-subtitle h6 {
+    font-family: 'Public sans', cursive;
+    font-size: 25px;
+    color: #073831;
+    margin-top: -7px;
+    margin-left: 49px;
+    font-weight: 600;
+}
+.bod .text p {
+    font-family: 'Public sans', cursive;
+    font-size: 25px;
+    color: #073831;
+    margin-top: 43px;
+    margin-left: 49px;
+    line-height: 35px;
+}
+.bod .text .intro-box-buttons {
+    margin-top: -10px;
+    display: flex;
+    width: 82.3%;
+}
+.bod .text .intro-box-buttons .but1 {
+    background-color: #073831;
+    color: white;
+    flex-basis: 50%;
+    height: 56.5px;
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 43px;
+    margin-left: 50px;
+    animation: reverse-background-color-hover-button-cv-dw .2s ease;
+    animation-fill-mode: forwards;
+}
+.bod .text .intro-box-buttons .but1:hover {
+    animation: background-color-hover-button-cv-dw .2s ease;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+} 
+.bod .text .intro-box-buttons .but2 {
+    flex-basis: 50%;
+    background-color: #FEF4F5;
+    color: #073831;
+    height: 56.5px;
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 600;
+    margin-top: 43px;
+    margin-left: 12px;
+    animation: reverse-background-color-hover-intro-invisible .2s ease;
+    animation-fill-mode: forwards;
+}
+.bod .text .intro-box-buttons .but2:hover {
+    animation: background-color-hover-button-intro-invisible .2s ease;
+    animation-fill-mode: forwards;
+    color: white;
+    cursor: pointer;
+}
+    /* End Left/Pink side */
+
+    /* Green/Right side */
+.bod .photo {
+    height: 675px;
+    border: 0px solid black;
+    flex-basis: 50%;
+    background-color: #073831;
+    text-align: center;
+}
+.bod img {
+    /* position: absolute; */
+    margin: auto;
+    height: auto;
+    width: 350px;
+    margin-top: 122px;
+}
+    /* End Green/Right side */
+/* End INtro section */
+
+/* À propos section */
+#Àpropos {
+    display: flex;
+    margin-top: 100px;
+    /* border: 1px solid black; */
+}
+#Àpropos .image-div {
+    flex-basis: 50%;
+    border: 0px solid black;
+    text-align: right;
+}
+#Àpropos .image-div img {
+    width: 500px;
+    height: auto;
+    margin-right: 74px;
+}
+#Àpropos .text-div {
+    flex-basis: 50%;
+    border: 0px solid black;
+    text-align: left;
+}
+#Àpropos .text-div h1 {
+    margin-top: 57px;
+    font-family: 'Red Rose', cursive;
+    font-size: 40px;
+    margin-left: 15px;
+    color: #073831;
+    margin-bottom: 19px;
+    font-weight: 900;
+}
+#Àpropos .text-div p {
+    font-family: 'Public sans', sans-serif;
+    font-size: 18px;
+    color: #073831;
+    margin-left: 15px;
+    line-height: 36px;
+}
+#Àpropos button {
+    background-color: #073831;
+    color: white;
+    height: 53.8px;
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 21.5px;
+    margin-left: 17.5px;
+    width: 237px;
+    animation: reverse-background-color-hover-button-cv-dw .2s ease;
+    animation-fill-mode: forwards;
+}
+#Àpropos button:hover {
+    animation: background-color-hover-button-cv-dw .2s ease;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+/* End of À propos section */
+
+/* Recommendations */
+#Recommendations {
+    display: block;
+    background-color: #FEF4F5;
+    margin-top: 95px;
+    height: 485px;
+    border: 0px solid black;
+}
+#Recommendations h1 {
+    color: #073831;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Red Rose', cursive;
+    text-align: center;
+    border: 0px solid black;
+    padding-top: 110px;
+}
+#Recommendations .display-recos {
+    border: 0px solid black;
+    margin: auto;
+    width: 60%;
+    height: 250px;
+    border: 0 solid black;
+    display: flex;
+}
+#Recommendations .display-recos .left-button {
+    flex-basis: 5%;
+    font-size: 13px;
+    border:  0px solid black;
+    margin: auto;
+    width: 100%;
+    animation: reverse-fletxa-left .3s ease;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+#Recommendations .display-recos .right-button {
+    flex-basis: 5%;
+    font-size: 13px;
+    border:  0px solid black;
+    margin: auto;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    animation: reverse-fletxa-right .3s ease;
+    animation-fill-mode: forwards;
+    opacity: 0%;
+}
+#Recommendations .display-recos .right-button label {
+    cursor: pointer;
+}
+#Recommendations .display-recos .left-button label {
+    cursor: pointer;
+}
+#Recommendations .display-recos:hover .left-button {
+    animation: fletxa-left .3s ease;
+    animation-fill-mode: forwards;
+}
+#Recommendations .display-recos:hover .right-button {
+    animation: fletxa-right .3s ease;
+    animation-fill-mode: forwards;
+}
+#Recommendations .display-recos .messages {
+    flex-basis: 90%;
+    border:  0 solid black;
+    margin: auto;
+    width: 100%;
+    margin-left: 100px; 
+    margin-right: 100px;
+}
+#Recommendations .display-recos .messages .Message1 {
+    font-family: 'Public sans', sans-serif;
+    font-size: 20px;
+    color: #073831;
+    text-align: center;
+    line-height: 23px;    
+}
+#Recommendations .display-recos .messages .Message1 h6 {
+    margin-top: 25px;
+    font-size: 14px;
+}
+#Recommendations .display-recos .messages:hover {
+    cursor:default;
+}
+/* End Recommendations */
+
+/* Experience section */
+#Curriculum {
+    background-color: #073831;
+    height: auto;
+}
+#Curriculum h1 {
+    color: white;
+    font-family: 'Red Rose', sans-serif;
+    font-size: 60px;
+    margin-left: 159px;
+    padding-top: 110px;
+    margin-bottom: 85px;
+    text-align: left;
+}
+#Curriculum .caja1 {
+    display: flex;
+    margin: auto;
+    width: 1200px;
+    padding-bottom: 113px;
+    border-bottom: 1px solid #4F726D;
+}
+#Curriculum .caja1 .left {
+    border: 0px solid white;
+    flex-basis: 50%;
+}
+#Curriculum .caja1 .left p {
+    font-size: 16px;
+    color: white;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 500;
+}
+#Curriculum .caja1 .left .dinou {
+    padding-top: 120px;
+}
+#Curriculum .caja1 .left .divuit {
+    padding-top: 100px;
+}
+#Curriculum .caja1 .left h6 {
+    margin-top: 3px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 500;
+}
+#Curriculum .caja1 .right {
+    /* border: 1px solid white; */
+    height: 150px;
+    flex-basis: 50%;
+}
+#Curriculum .caja1 .right p {
+    font-size: 18px;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    line-height: 30px;
+}
+#Curriculum .caja1 .right .text2 { 
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+#Curriculum .caja2 {
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 1200px;
+    padding-bottom: 233px;
+    border-bottom: 1px solid #4F726D;
+}
+#Curriculum .caja2 .left {
+    flex-basis: 51.3%;
+    /* border: 1px solid white; */
+    height: 150px;
+}
+#Curriculum .caja2 .left h2 {
+    color: white;
+    font-family: 'Red Rose', cursive;
+    font-weight: 800;
+    font-size: 40px;
+    padding-top: 35px;
+}
+#Curriculum .caja2 .right {
+    flex-basis: 48.7%;
+    /* border: 1px solid white; */
+    height: 150px;
+}
+#Curriculum .caja2 .right .divuitNY p {
+    font-size: 16.5px;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    line-height: 27.5px;
+}
+#Curriculum .caja2 .right h6 {
+    margin-top: 3px;
+    font-size: 25px;
+    color: white;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 400;
+}
+#Curriculum .caja2 .right p {
+    font-size: 18px;
+    font-family: 'Public sans', sans-serif;
+    font-weight: 100;
+    color: white;
+    line-height: 30px;
+    margin-top: 10px;
+}
+#Curriculum .caja2 .right p:nth-child(2) {
+    padding-bottom: 80px;
+}
+#Curriculum .caja2 .right .divuitNY:nth-child(1) {
+    margin-top: 15px;
+}
+#Curriculum .caja3 .left h2 {
+    color: white;
+    font-family: 'Red Rose', cursive;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 75px;
+}
+#Curriculum .caja3 {
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    width: 1200px;
+    padding-bottom: 85px;
+    border-bottom: 1px solid #4F726D; 
+}
+#Curriculum .caja3 .left {
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+}
+#Curriculum .caja3 .right {
+    display: flex;
+    flex-basis: 50%;
+    font-family: 'Public sans', sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+#Curriculum .caja3 .right .rightbox-leftside {
+    flex-basis: 50%;
+    margin-left: 8px;
+}
+#Curriculum .caja3 .right .rightbox-rightside {
+    flex-basis: 50%;
+    margin-left: 30px;
+}
+#Curriculum .caja3 .right .rightbox-leftside p:nth-child(1) {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+#Curriculum .caja3 .right .rightbox-rightside p:nth-child(1) {
+    margin-top: 70px;
+    margin-bottom: 67px;
+}
+#Curriculum .caja4 {
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    width: 1200px;
+} 
+#Curriculum .caja4 .titulo {
+    flex-basis: 50%;
+    color: white;
+    font-family: 'Red Rose', cursive;
+    font-weight: bold;
+    font-size: 26.8px;
+    margin-top: 75px;
+}
+#Curriculum .caja4 .lenguas {
+    margin-top: 65px;
+    flex-basis: 50%;
+    display: flex;
+    font-family: 'Public sans', sans-serif;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#Curriculum .caja4 .lenguas .bloque1 {
+    margin-left: 9px;
+    margin-right: 205px;
+}
+#Curriculum .caja4 .lenguas p:nth-child(1) {
+    margin-bottom: 34px;
+}
+/* End of experience section */
+
+/* Footer */
+#Contact {
+    background-color: #073831;
+    height: 500px;
+    padding-top: 180px;
+}
+#Contact .contact-INFO {
+    margin: auto;
+    width: 1200px;
+    display: flex;
+} 
+#Contact .text h1 {
+    color: white;
+    font-family: 'Red Rose', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+#Contact .contact-INFO .text p {
+    font-family: 'Public sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-top: 12px;
+    line-height: 26px;
+    margin-bottom: 45px;
+}
+#Contact .contact-INFO .text h4 {
+    font-family: 'Public sans', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 33px;
+}
+#Contact .contact-INFO .text h5 {
+    font-family: 'Public sans', sans-serif;
+    font-size: 25px;
+    color: white;
+    margin-bottom: 33px;
+}
+#Contact .text .icons {
+    display: flex;
+} 
+#Contact .text .icons img {
+    width: 28px;
+    height: auto;
+    margin-right: 35px;
+    cursor: pointer;
+}
+#Contact .text .icons img[src="instagram.png"] {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+}
+#Contact .text .icons img[src="facebook-app-symbol.png"] {
+    height: 30px;
+    width: 33px;
+    margin-top: 2px;
+}
+#Contact .text .icons img[src="twitter.png"] {
+    width: 35px;
+}
+#Contact .text .icons img[src="linkedin.png"] {
+    width: 34px;
+}
+#Contact .contact-INFO form {
+    display: block;
+    /* border: 1px solid white; */
+    flex-basis: 50%;
+}
+#Contact .contact-INFO form p {
+    font-family: 'Public sans', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin-bottom: -5px;
+}
+#Contact .contact-INFO form .form-wrapper {
+    margin-left: 70px;
+}
+#Contact input[type="text"] {
+    background-color: #073831;
+    border: none;
+    border-bottom: 1px solid #4F726D;
+    height: 30px;
+    width: 103%;
+    margin-top: -35px;
+    margin-bottom: 30px;
+    font-family: 'Public sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+#Contact input[type="email"] {
+    background-color: #073831;
+    border: none;
+    border-bottom: 1px solid #4F726D;
+    height: 30px;
+    width: 103%;
+    margin-top: -35px;
+    margin-bottom: 30px;
+    font-family: 'Public sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+textarea {
+    background-color: #073831;
+    border: none;
+    border-bottom: 1px solid #4F726D;
+    height: 40px;
+    width: 103%;
+    margin-top: -5px;
+    font-family: 'Public sans', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+button {
+    background-color: #ffffff;
+    color: #073831;
+    width: 52%;
+    margin-top: 50px;
+    height: 58px;
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: 'Public Sans', cursive;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+footer .rights {
+    font-family: 'Public sans', sans-serif;
+    color: #4F726D;
+    margin-top: 75px;
+    font-size: 13px;
+    text-align: center;
+}
+/* End footer */
+
+/* keyframes//Animations */
+    /* Buttons hover animations */
+@keyframes background-color-hover-button-cv-dw {
+    100% {background-color: #414345;}
+}
+@keyframes reverse-background-color-hover-button-cv-dw {
+    0% {background-color: #414345;}
+}
+@keyframes background-color-hover-button-intro-invisible {
+    100% {background-color: #073831;}
+}
+@keyframes reverse-background-color-hover-intro-invisible {
+    0% {background-color: #073831;}
+}
+    /* End Buttons hover animations */
+
+    /* Fletxa animations #Recommendations */
+@keyframes fletxa-right {
+    0% {
+        opacity: 0%;
+        text-align: right;
+    }
+    70%{
+        opacity: 30%;
+    }
+    100% {
+        transform: translateX(-15px) ;
+        opacity: 100%;
+    }
+}
+@keyframes reverse-fletxa-right {
+    100% {
+        opacity: 0%;
+        text-align: right;
+    }
+    70%{
+        opacity: 30%;
+    }
+    0% {
+        transform: translateX(-15px) ;
+        opacity: 100%;
+    }
+}
+@keyframes fletxa-left {
+    0% {
+        opacity: 0%;
+    }
+    70%{
+        opacity: 30%;
+    }
+    100% {
+        transform: translateX(15px) ;
+        opacity: 100%;
+    }
+}
+@keyframes reverse-fletxa-left {
+    100% {
+        opacity: 0%;
+    }
+    70%{
+        opacity: 30%;
+    }
+    0% {
+        transform: translateX(15px) ;
+        opacity: 100%;
+    }
+}
+    /* End Fletxa animations #Recommendations */
