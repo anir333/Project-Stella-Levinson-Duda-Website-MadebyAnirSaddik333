@@ -40,7 +40,6 @@
     text-decoration: none;
     color: #073831;
     border: 0 solid black;
-    /* width: 100%; */
     text-align: left;
     margin-left: 1px;
     cursor: auto;
@@ -85,6 +84,85 @@
     text-align: right;
 }
 /* End of Navigation Bar */
+
+
+/* RETRY OF DISPOSABLE MENU */
+.displayable-menu
+{
+    position: fixed;
+    margin-top: -110px;
+    /* margin-left: 20px; */
+    width: 100%;
+}
+.MENU-ICON {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+.margin-for-menu-icon 
+{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.menu 
+{
+    position: absolute;
+    background-color: white;
+    /* z-index: 1; */
+    height: 600px;
+    width: 100%;
+    animation: menu-ani ease .7s;
+    animation-fill-mode: forwards;
+}
+.displayable-menu span 
+{
+    cursor: pointer;
+}
+input[type="checkbox"]:checked ~ .menu 
+{
+    display: none;
+    /* animation: menu-ani ease .7s;
+    animation-fill-mode: forwards; */
+}
+input[type="checkbox"] {
+    display: none;
+}
+.displayable-menu .menu p 
+{
+    margin: auto;
+    width: 23%;
+    text-align: center;
+    margin-top: 100px;
+}
+.displayable-menu .menu p a
+{
+    text-decoration: none;
+    color: #073831;
+    font-size: 28px;
+    font-family: 'Public sans', sans-serif;
+}
+.displayable-menu .menu p a:hover {
+    margin-top: -15px;
+}
+.iconss {
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-bottom: 15px;
+    display: flex;
+    border: 1px solid #073831;
+    border-radius: 10px;
+    margin: auto;
+    width: 28%;background-color: #073831;
+} 
+.iconss img {
+    width: 28px;
+    height: auto;
+    margin-right: 35px;
+    cursor: pointer;
+}
+/* Display menu */
 
 /* Intro Section */
     /* Left/Pink side */
@@ -188,7 +266,6 @@
 #Àpropos {
     display: flex;
     margin-top: 100px;
-    /* border: 1px solid black; */
 }
 #Àpropos .image-div {
     flex-basis: 50%;
@@ -588,9 +665,6 @@
     color: white;
     margin-bottom: -5px;
 }
-#Contact .contact-INFO form .form-wrapper {
-    margin-left: 70px;
-}
 #Contact input[type="text"] {
     background-color: #073831;
     border: none;
@@ -714,4 +788,244 @@ footer .rights {
         opacity: 100%;
     }
 }
-    /* End Fletxa animations #Recommendations */
+    /* End Fletxa animations 
+    #Recommendations */
+
+    /*Disposable menu keyframe animation */
+    @keyframes menu-ani  {
+        0% {
+            height: 50px;
+            margin-top: -50px;
+            opacity: 0;
+        }
+        100% {
+            height: 550px;
+            margin-top: 0;
+            opacity: 1;
+        }
+    }
+    /* End disposable menu keyframe */
+/* End keyframes//Animations */
+
+/* Media Queries */
+@media all and (max-width: 1200px) {
+    .titul-stella {
+        display: inline;
+    }
+    .navigation-box .buttons {
+        display: none;
+        flex-basis: 0%;
+        border: 1px solid red;
+    }
+    .navigation-box h1 {
+        flex-basis: 70%;
+    }
+    .navigation-box .wrapper-button {
+        flex-basis: 30%;
+    }
+    .navigation-box h1 {
+        margin-left: 80px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .titul-stella {display: none;}
+    .desktop {display: none;}
+    .desk {display: inline;}
+    .des {display: inline;}
+}
+@media all and (min-width: 1200px) {
+    .displayable-menu {
+        display: none;
+    }
+}
+@media all and (min-width: 700px) {
+    .RETA {
+        display: inline;
+    }
+}
+@media all and (max-width: 700px) {
+    .navigation-box h1 {
+        flex-basis: 60%;
+    }
+    .bod {
+        display: block;
+        margin-top: -30px;
+    }
+    .bod .text .title-and-subtitle h1 {
+        padding-top: 100px;
+    }
+    .navigation-box {
+        margin-top: -120px;   
+    }
+    #Àpropos {
+        display: block;
+    }
+    #Àpropos .text-div {
+        margin: auto;
+        width: 100%;
+    }
+    #Recommendations .display-recos {
+        width: 100%;
+    }
+    .RETA {
+        display: none;
+    }
+    #Recommendations .display-recos .messages {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .desktop {display: none;}
+    .des {display: inline;}
+    .desk {display: none;}
+}
+@media all and (max-width: 1170px) {
+    .desktop {display: inline;}
+    .desk {display: none;} 
+    .des {display: none;} 
+}
+@media all and (min-width: 1170px) {
+    .desktop {display: none;}
+    .des {display: inline;}
+}
+@media all and (max-width: 1100px) {
+    #Curriculum .caja1 {
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 888px;
+    }
+    #Curriculum .caja1 .right {
+        padding-top: 85px;
+    }
+    #Curriculum .caja2 {
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 315px;
+    }
+    #Curriculum .caja3 {
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 333px;
+    }
+    #Curriculum .caja4 {
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: 222px;
+    }
+    #Contact {
+        height: 1050px;
+    }
+    #Contact .contact-INFO {
+        margin: auto;
+        width: 60%;
+        display: block;
+    }
+    #Contact form .form-wrapper {
+        padding-top: 75px;
+    }
+    #Contact .contact-INFO .text {
+        margin-left: 70px;
+    }
+}
+
+@media all and (max-width: 830px) {
+    #Curriculum h1 {
+        margin-left: 10px;
+
+    }
+    #Curriculum .caja1 {
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 1000px;
+    }
+    #Curriculum .caja1 .right {
+        padding-top: 85px;
+    }
+    #Curriculum .caja2 {
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 315px;
+    }
+    #Curriculum .caja3 {
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 333px;
+    }
+    #Curriculum .caja4 {
+        display: block;
+        margin: auto;
+        width: 95%;
+        height: 222px;
+    }
+    #Contact {
+        height: 1050px;
+    }
+    #Contact .contact-INFO {
+        margin: auto;
+        width: 95%;
+        display: block;
+    }
+    #Contact form .form-wrapper {
+        padding-top: 75px;
+        width: 80%;
+    }
+    #Contact .contact-INFO .text {
+        margin-left: 70px;
+    }
+}
+@media all and (min-width: 500px) {
+    #Contact .contact-INFO form .form-wrapper {
+        margin-left: 70px;
+    }
+    .navigation-box .wrapper-button button {
+        width: 90%;
+    }
+} 
+@media all and (min-width: 500px) {
+    .navigation-box .wrapper-button button {
+        width: 75%;
+    }
+}
+@media all and (min-width: 900px) {
+    .navigation-box .wrapper-button button {
+        width: 52%;
+    }
+}
+@media all and (max-width: 500px) {
+    .navigation-box {
+        padding-bottom: 25px;
+        width: 100%;
+    }
+    #Contact .contact-INFO {
+        margin: auto;
+        width: 95%;
+        display: block;
+    }
+    #Contact .contact-INFO .text {
+        margin-left: 20px;
+    }
+    #Contact .contact-INFO form .form-wrapper {
+        margin-left: 20px;
+    }
+    #Contact .contact-INFO form .form-wrapper button {
+        width: 70%;
+    }
+    #Àpropos .image-div img {
+        margin-right: 0;
+    }
+    .navigation-box .wrapper-button button {
+        width: 90%;
+    }
+}
+/* End Media Queries */
+
+/*max -> quant es mes petit
+min -> cuan es mes gran */
